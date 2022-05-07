@@ -15,24 +15,16 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="#">Medeast</a>
+          <p className={styles.description}>
+            Medeast is an Medicen Tracking and authentication system made using 
+            WEB3 Techenolage. It is totaly decentralized platform ..
+            </p>
         </h1>
 
         <p className={styles.description}>
           Get started by {' '}
           <ConnectButton/>
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-        </div>
       </main>
 
       <footer className={styles.footer}>
