@@ -35,7 +35,7 @@ export default function Home() {
           href="#"
           target="_blank"
         >
-          Made by Joydip Das. LOOOOLe
+          Made by Joydip Das and Arup is trying to help. 
         </a>
       </footer>
     </div>
