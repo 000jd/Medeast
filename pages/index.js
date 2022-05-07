@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { ConnectButton } from 'web3uikit'
 
 export default function Home() {
   return (
@@ -14,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="#">Medeast</a>
+          Welcome to <a href="/">Medeast</a>
           <p className={styles.description}>
             Medeast is an Medicen Tracking and authentication system made using 
             WEB3 Techenolage. It is totaly decentralized platform ..
@@ -22,8 +20,8 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by {' '}
-          <ConnectButton/>
+          Get started by going to{' '}
+          <a href="#">Dashboard</a>
         </p>
       </main>
 
