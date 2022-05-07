@@ -32,7 +32,7 @@ export default function Home() {
           href="#"
           target="_blank"
         >
-          Made by ICFAI University Tripura.
+          Made by Joydip Das.
         </a>
       </footer>
     </div>
