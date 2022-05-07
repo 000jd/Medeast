@@ -32,7 +32,7 @@ export default function Home() {
           href="#"
           target="_blank"
         >
-          Made by Joydip Das. he is very shorth
+          Made by Joydip Das. LOOOOL
         </a>
       </footer>
     </div>
