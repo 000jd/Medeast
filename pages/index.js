@@ -20,13 +20,13 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-      < main
-          Get started by {' '}
-          <ConnectButton />
+          <main>
+            Get started by {' '}
+            <ConnectButton />
 
-          Get started by going to{' '}
-          <a href="#">Dashboard</a>
-      > main
+            Get started by going to{' '}
+            <a href="#">Dashboard</a>
+          </main>
         </p>
       </main>
 
@@ -35,7 +35,7 @@ export default function Home() {
           href="#"
           target="_blank"
         >
-          Made by Joydip Das and Arup is trying to help. 
+          Made by Joydip Das and Arup is trying to help.
         </a>
       </footer>
     </div>
