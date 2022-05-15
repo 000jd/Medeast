@@ -16,14 +16,14 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="#">Medeast</a>
           <p className={styles.description}>
-            Medeast is an Medicen Tracking and authentication system made using 
+            Medeast is an Medicen Tracking and authentication system made using
             WEB3 Techenolage. It is totaly decentralized platform ..
-            </p>
+          </p>
         </h1>
 
-        <p className={styles.description}>
-          Get started by {' '}
-          <ConnectButton/>
+        <p className={styles.description2}>
+          Start by connecting your wallet{'     '}
+          <ConnectButton />
         </p>
       </main>
 
@@ -32,7 +32,7 @@ export default function Home() {
           href="#"
           target="_blank"
         >
-          Made by Joydip Das.
+          github: 000jd & cion247
         </a>
       </footer>
     </div>
