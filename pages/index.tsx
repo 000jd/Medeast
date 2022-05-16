@@ -1,12 +1,17 @@
 import type { NextPage } from 'next'
 import Header from '../components/Header'
+import Trending from '../components/Trending'
+import BackGround from '../components/BackGround'
+
 const Home: NextPage = () => {
   return (
     <div className='main-h-screen'>
       <Header />
-      <div className='mt-10' />
-      {/* <Trending /> */}
-      <div className='mt-20' />
+      <BackGround />
+
+      {/*<div className='mt-10' />
+      {/*<Trending />*/}
+      {/*<div className='mt-20' />
       {/* <CMCtable /> */}
     </div>
   )
