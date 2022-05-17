@@ -1,54 +1,24 @@
 import React from 'react'
-import Search from '../assets/svg/search'
-import { ConnectButton } from 'web3uikit'
-
-const styles = {
-    header: 'bg-[teal] text-white h-20 flex pl-7 items-center justify-start gap-[450px] w-full p-[20px]',
-    logo: 'text-4xl font-bold flex items-center justify-start w-full px-7',
-    headerWrapper: 'flex items-center justify-end h-full max-w-screen-xl  px-4',
-    nav: 'test-black flex justify-center item-center gap-[20px',
-    navItem: 'relative mr-1 cursor-pointer hover:opacity-60 px-4',
-    inputContainer: 'flex items-center justify-center pl-20 rounded bd-[black]',
-    input: 'bg-transparent outline-none text-white w-70 ml-3',
-}
 
 const Header = () => {
     return (
-        <div className={styles.header}>
+        <header class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                    {/*<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>*/}
 
-            <div className={styles.logo}>
-                <h3>
-                    Medeast
-                </h3>
-
-            </div>
-
-            <div className={styles.headerWrapper}>
-                <nav className={styles.nav}>
-                    <div className={styles.navItem}>
-                        <div className={styles.navLink}>Blog</div>
-
-
-                    </div>
-
-                    <div className={styles.navItem}>
-                        <div className={styles.navLink}>About</div>
-
-                    </div>
-
-
+                    <span class="ml-3 text-xl">Medeast</span>
+                </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <a class="mr-5 hover:text-white">First Link</a>
+                    <a class="mr-5 hover:text-white">Second Link</a>
 
                 </nav>
 
-                <div className='flex items-center'>
-                    <ConnectButton />
-                    <div className={styles.inputContainer}>
-                        <Search />
-                        <input className={styles.input} placeholder='search' />
-                    </div>
-                </div>
             </div>
-        </div>
+        </header>
     )
 }
 

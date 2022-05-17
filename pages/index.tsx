@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Header from '../components/Header'
-import Trending from '../components/Trending'
+import Footer from '../components/Footer'
 import BackGround from '../components/BackGround'
 
 const Home: NextPage = () => {
@@ -9,10 +9,7 @@ const Home: NextPage = () => {
       <Header />
       <BackGround />
 
-      {/*<div className='mt-10' />
-      {/*<Trending />*/}
-      {/*<div className='mt-20' />
-      {/* <CMCtable /> */}
+      <Footer />
     </div>
   )
 }
