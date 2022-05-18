@@ -8,7 +8,6 @@ const Home: NextPage = () => {
     <div className='main-h-screen'>
       <Header />
       <BackGround />
-
       <Footer />
     </div>
   )
