@@ -35,11 +35,13 @@ contract Medeast{
      string longatude -> this will store the longatude of thr pakage
      string latatude -> this will store the latatude of the pakage 
      uint tempratur -> this will store the tempratur of the pakage
+     uint humedate -> this will store the humedate of the pakage
     */
     struct IotData{
         string longatude;
         string latatude;
         uint tempratur;
+        uint humedate;
     }
 
     /*
@@ -72,6 +74,7 @@ contract Medeast{
         iotdata.longatude = "None";
         iotdata.latatude = "None";
         iotdata.tempratur = 0;
+        iotdata.humedate = 0;
     }
 
     /*
@@ -109,10 +112,12 @@ contract Medeast{
         string memory _longatude,
         string memory _latatude,
         uint _tempratur
+        uint _humedate
     )public{
         iotdata.longatude = _longatude;
         iotdata.latatude = _latatude;
         iotdata.tempratur = _tempratur;
+        iotdata.humedate = _humedate;
     }
 
     /*
@@ -146,12 +151,14 @@ contract Medeast{
     function getIotData() public view returns(
         string memory,
         string memory,
+        uint,
         uint
     ){
         return(
             iotdata.longatude,
             iotdata.latatude,
-            iotdata.tempratur
+            iotdata.tempratur,
+            iotdata.humedate
         );
     }
 
