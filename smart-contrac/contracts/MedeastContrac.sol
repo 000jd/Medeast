@@ -112,7 +112,7 @@ contract Medeast{
     function setIotData(
         string memory _longatude,
         string memory _latatude,
-        uint _tempratur
+        uint _tempratur,
         uint _humedate
     )public{
         iotdata.longatude = _longatude;
