@@ -2,7 +2,6 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract MedeastIOT{
-
     /*
      this is struct contans necesory filds for the geolocation and the tempratur of the 
      medican pakge which we will get from thr IOT device ,

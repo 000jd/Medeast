@@ -1,5 +1,5 @@
-const Medeast = artifacts.require('MedeastMedicenses');
+const MedeastMedicenses = artifacts.require('MedeastMedicenses');
 
 module.exports = function (deployer) {
-    deployer.deploy(Medeast)
+    deployer.deploy(MedeastMedicenses)
 }

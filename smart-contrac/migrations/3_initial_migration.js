@@ -1,5 +1,5 @@
-const Medeast = artifacts.require('MedeastIOT');
+const MedeastIOT = artifacts.require('MedeastIOT');
 
 module.exports = function (deployer) {
-    deployer.deploy(Medeast)
+    deployer.deploy(MedeastIOT)
 }
