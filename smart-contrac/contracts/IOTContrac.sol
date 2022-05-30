@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-contract MedeastIOT{
+contract MedeastIOT {
     /*
      this is struct contans necesory filds for the geolocation and the tempratur of the 
      medican pakge which we will get from thr IOT device ,
@@ -10,11 +10,11 @@ contract MedeastIOT{
      uint tempratur -> this will store the tempratur of the pakage
      uint humedate -> this will store the humedate of the pakage
     */
-    struct IotData{
+    struct IotData {
         string longatude;
         string latatude;
-        uint tempratur;
-        uint humedate;
+        uint256 tempratur;
+        uint256 humedate;
     }
 
     /*
@@ -23,45 +23,48 @@ contract MedeastIOT{
     iotdata -> object of IotData
     */
     IotData public iotdata;
-    
-     /*
+
+    /*
     this constructor is just inatising defalt values
     for iotdata -> object of IotData
     */
-    constructor(){
-        iotdata.longatude = "None";
-        iotdata.latatude = "None";
+    constructor() {
+        iotdata.longatude = 'None';
+        iotdata.latatude = 'None';
         iotdata.tempratur = 0;
         iotdata.humedate = 0;
     }
 
-     /*
+    /*
         this function set data in iot data structor,
     */
     function setIotData(
         string memory _longatude,
         string memory _latatude,
-        uint _tempratur,
-        uint _humedate
-    )public{
+        uint256 _tempratur,
+        uint256 _humedate
+    ) public {
         iotdata.longatude = _longatude;
         iotdata.latatude = _latatude;
         iotdata.tempratur = _tempratur;
         iotdata.humedate = _humedate;
     }
 
-
     /*
     this function wull  return geolacution and tempratur from the
     blockchane.
     */
-    function getIotData() public view returns(
-        string memory,
-        string memory,
-        uint,
-        uint
-    ){
-        return(
+    function getIotData()
+        public
+        view
+        returns (
+            string memory,
+            string memory,
+            uint256,
+            uint256
+        )
+    {
+        return (
             iotdata.longatude,
             iotdata.latatude,
             iotdata.tempratur,

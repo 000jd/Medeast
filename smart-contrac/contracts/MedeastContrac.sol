@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
-contract MedeastMedicenses{
+contract MedeastMedicenses {
     /*
     This struct contans necesory filds which the manofactur will fill
     address Manufacturat -> this will hold the addras of the Manafactur.
@@ -16,15 +16,15 @@ contract MedeastMedicenses{
     string CompanyName -> this will hold the name ofn the compane.
     string MedicineName -> this will hold the name of the medicins.
     */
-    struct Medicine{
+    struct Medicine {
         bool initialized;
-        uint BachNumber;
-        uint Weight;
-        uint deployDate;
-        uint MfgDate;
-        uint ExpDate;
-        uint PricePerPack;
-        uint NumberOfPakages;
+        uint256 BachNumber;
+        uint256 Weight;
+        uint256 deployDate;
+        uint256 MfgDate;
+        uint256 ExpDate;
+        uint256 PricePerPack;
+        uint256 NumberOfPakages;
         string MfgLicNo;
         string CompanyName;
         string MedicineName;
@@ -34,7 +34,7 @@ contract MedeastMedicenses{
     hear we are making objacts of the struct
     in this case 
     medicines -> object of Medicine
-    */ 
+    */
     Medicine public medicines;
 
     /*
@@ -42,7 +42,7 @@ contract MedeastMedicenses{
     for medicines -> object of Medicine
         iotdata -> object of IotData
     */
-    constructor(){
+    constructor() {
         medicines.initialized = false;
         medicines.BachNumber = 0;
         medicines.Weight = 0;
@@ -51,22 +51,22 @@ contract MedeastMedicenses{
         medicines.ExpDate = 0;
         medicines.PricePerPack = 0;
         medicines.NumberOfPakages = 0;
-        medicines.MfgLicNo = "None";
-        medicines.CompanyName = "None";
-        medicines.MedicineName = "None";
+        medicines.MfgLicNo = 'None';
+        medicines.CompanyName = 'None';
+        medicines.MedicineName = 'None';
     }
 
     /*
     this function will set data which will be send by the jascript.
     */
     function setData(
-        uint _BachNumber,
-        uint _Weight,
-        uint _deployDate,
-        uint _MfgDate,
-        uint _ExpDate,
-        uint _PricePerPack,
-        uint _NumberOfPakages,
+        uint256 _BachNumber,
+        uint256 _Weight,
+        uint256 _deployDate,
+        uint256 _MfgDate,
+        uint256 _ExpDate,
+        uint256 _PricePerPack,
+        uint256 _NumberOfPakages,
         string memory _MfgLicNo,
         string memory _CompanyName,
         string memory _MedicineName
@@ -88,23 +88,33 @@ contract MedeastMedicenses{
     this function will get the datya from the blockchane and we 
     will use javascript to pull the data.
     */
-    function getData() public view returns(
-        uint, uint, uint, uint, uint, uint, uint,
-        string memory,
-        string memory,
-        string memory
-    ){
-    return (
-        medicines.BachNumber,
-        medicines.Weight,
-        medicines.deployDate,
-        medicines.MfgDate,
-        medicines.ExpDate,
-        medicines.PricePerPack,
-        medicines.NumberOfPakages,
-        medicines.MfgLicNo,
-        medicines.CompanyName,
-        medicines.MedicineName
+    function getData()
+        public
+        view
+        returns (
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            uint256,
+            string memory,
+            string memory,
+            string memory
+        )
+    {
+        return (
+            medicines.BachNumber,
+            medicines.Weight,
+            medicines.deployDate,
+            medicines.MfgDate,
+            medicines.ExpDate,
+            medicines.PricePerPack,
+            medicines.NumberOfPakages,
+            medicines.MfgLicNo,
+            medicines.CompanyName,
+            medicines.MedicineName
         );
     }
 }
